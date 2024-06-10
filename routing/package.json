@@ -1,0 +1,13 @@
+{
+  "name": "routing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+
+  },
+  "keywords": [],
+  "author": "Marjorie Gonzaga",
+  "license": "ISC",
+  "description": "Navegacion archivos html"
+}
