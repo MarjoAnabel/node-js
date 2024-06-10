@@ -1,5 +1,5 @@
-function esPar(numpar) {
-  return numpar % 2 === 0;
+function esPar(numpares) {
+  return numpares % 2 === 0;
 }
 
  module.exports = esPar
