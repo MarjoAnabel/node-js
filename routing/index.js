@@ -1,12 +1,13 @@
 const http = require ('http')
 const url = require ('url')
+const fs = require("fs");
 
 http
  .createServer((req, res) => {
    const query = url.parse(req.url, true)
-   const filename = `.${query.pathname}`
+   const filename = `./pages/${query.pathname}`
 
-   fs.readFile(`./pages/${filename}`, (err, data) => {
+   fs.readFile(`./${filename}`, (err, data) => {
      if (err) {
        fs.readFile('./pages/notFound.html', (err, data) => {
          if (err) {
